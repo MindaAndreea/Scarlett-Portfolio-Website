@@ -471,7 +471,8 @@ section#skills {
 }
 
 .design-skills-progress-1 {
-  animation: web-design 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: web-design 3s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes web-design {
@@ -485,7 +486,8 @@ section#skills {
 }
 
 .design-skills-progress-2 {
-  animation: print-design 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: print-design 3s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes print-design {
@@ -499,7 +501,8 @@ section#skills {
 }
 
 .design-skills-progress-3 {
-  animation: logo-design 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: logo-design 3s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes logo-design {
@@ -513,7 +516,8 @@ section#skills {
 }
 
 .design-skills-progress-4 {
-  animation: graphic-design 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: graphic-design 3s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes graphic-design {
@@ -528,6 +532,7 @@ section#skills {
 
 .coding-skills-progress-1 {
   animation: HTML-CSS 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes HTML-CSS {
@@ -542,6 +547,7 @@ section#skills {
 
 .coding-skills-progress-2 {
   animation: Javascript 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes Javascript {
@@ -556,6 +562,7 @@ section#skills {
 
 .coding-skills-progress-3 {
   animation: python 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes python {
@@ -570,6 +577,7 @@ section#skills {
 
 .coding-skills-progress-4 {
   animation: SQL 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: linear;
 }
 
 @keyframes SQL {
