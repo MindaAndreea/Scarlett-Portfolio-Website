@@ -32,6 +32,16 @@
   }
 }
 
+@media screen and (max-width: 725px) {
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-h4 {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 610px) {
   header#header {
     position: absolute;
@@ -146,5 +156,23 @@
 
   .services-paragraph {
     font-size: calc(0.9rem + 1.5vw);
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .skills-title {
+    font-size: 1.7rem;
+  }
+
+  .skills-h4 {
+    font-size: 1.1rem;
   }
 }
