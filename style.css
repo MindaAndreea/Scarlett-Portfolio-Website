@@ -376,7 +376,6 @@ section#services {
 
 .services-title {
   text-transform: uppercase;
-  color: white;
 }
 
 .services-paragraph {
@@ -581,4 +580,141 @@ section#skills {
   100% {
     width: 35%;
   }
+}
+
+section#feedback {
+  background-color: var(--secondary-color);
+  padding: calc(1rem + 2vw);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.feedback-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.feedback-content-container {
+  padding: 2vw;
+  flex-basis: 50rem;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback-content-image,
+.feedback-content-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-content-container img {
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-content-first-paragraph,
+.feedback-content-second-paragraph {
+  font-family: "Indie Flower", cursive;
+  font-weight: 550;
+  letter-spacing: 0.25rem;
+}
+
+.feedback-content-first-paragraph {
+  font-size: 2.7rem;
+}
+
+.feedback-content-name {
+  font-size: 2.7rem;
+  margin-bottom: 0.35rem;
+}
+
+.feedback-content-title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-content-second-paragraph {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-content {
+  position: absolute;
+  width: 80%;
+  top: 35%;
+  left: 0;
+  background-color: var(--third-color-mod);
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+
+.feedback-content-container:hover .feedback-content,
+.feedback-content-container:active .feedback-content {
+  transform: scaleY(1);
+}
+
+.feedback-content-container:hover .feedback-content-image img,
+.feedback-content-container:active .feedback-content-image img {
+  transform: scale(0.85);
+  filter: grayscale(70%);
+}
+
+.feedback-content-diff {
+  top: 30%;
+}
+
+.feedback-content-different {
+  top: 28%;
+}
+
+.all-feedbacks-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-top: 4rem;
+}
+
+.all-feedbacks-link:link,
+.all-feedbacks-link:visited {
+  padding: 1rem;
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.all-feedbacks-link:link::after,
+.all-feedbacks-link:visited::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: -1;
+}
+
+.all-feedbacks-link:hover::after,
+.all-feedbacks-link:active::after {
+  transform: scaleY(1);
+  transform-origin: top;
 }

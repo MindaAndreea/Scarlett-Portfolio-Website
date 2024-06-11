@@ -26,9 +26,37 @@
   }
 }
 
+@media screen and (max-width: 899px) {
+  .feedback-content-name {
+    font-size: 2.3rem;
+  }
+
+  .feedback-content-title {
+    font-size: 3rem;
+  }
+
+  .feedback-content {
+    top: 45%;
+  }
+}
+
 @media screen and (max-width: 825px) {
   section#showcase {
     background-position: 80%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .feedback-content-name {
+    font-size: 2rem;
+  }
+
+  .feedback-content-title {
+    font-size: 2.7rem;
+  }
+
+  .feedback-content {
+    top: 37%;
   }
 }
 
@@ -39,6 +67,21 @@
 
   .skills-h4 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .feedback-content-name {
+    font-size: 1.7rem;
+  }
+
+  .feedback-content-title {
+    font-size: 2.5rem;
+  }
+
+  .feedback-content {
+    top: 30%;
+    width: 90%;
   }
 }
 
@@ -140,6 +183,22 @@
   }
 }
 
+@media screen and (max-width: 565px) {
+  .feedback-content-container:hover .feedback-content-image img,
+  .feedback-content-container:active .feedback-content-image img {
+    transform: scale(0.9);
+  }
+
+  .feedback-content-title {
+    font-size: 2.2rem;
+  }
+
+  .feedback-content {
+    top: 17%;
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 530px) {
   section#services {
     padding: 6rem 3rem 2rem;
@@ -165,6 +224,65 @@
   .skills-h4 {
     font-size: 1.2rem;
   }
+
+  .feedback-content {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .feedback-content-container:hover .feedback-content-image img,
+  .feedback-content-container:active .feedback-content-image img {
+    transform-origin: bottom;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .feedback-content-second-paragraph {
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .feedback-content-container:hover .feedback-content-image img,
+  .feedback-content-container:active .feedback-content-image img {
+    transform: scale(0.95);
+  }
+
+  .feedback-content-first-paragraph {
+    font-size: 2rem;
+  }
+  .feedback-content-name {
+    font-size: 1.5rem;
+  }
+
+  .feedback-content-title {
+    font-size: 2.2rem;
+  }
+
+  .feedback-content-second-paragraph {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .feedback-content-first-paragraph {
+    font-size: 1.5rem;
+  }
+  .feedback-content-name {
+    font-size: 1.2rem;
+  }
+
+  .feedback-content-title {
+    font-size: 1.9rem;
+  }
+
+  .feedback-content-second-paragraph {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -174,5 +292,11 @@
 
   .skills-h4 {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .feedback-content-title {
+    font-size: 1.73rem;
   }
 }
