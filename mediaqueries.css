@@ -1,3 +1,37 @@
+@media screen and (max-width: 1050px) {
+  section#showcase {
+    background-position: 100%;
+    align-items: flex-end;
+  }
+
+  .showcase-content-title,
+  .showcase-content-paragraph {
+    color: black;
+  }
+
+  .showcase-content-paragraph {
+    font-weight: 600;
+  }
+
+  .showcase-content-link:link,
+  .showcase-content-link:visited {
+    color: black;
+  }
+
+  .showcase-content-link:link::after,
+  .showcase-content-link:visited::after,
+  .showcase-content-link:hover::after,
+  .showcase-content-link:active::after {
+    opacity: 0.85;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  section#showcase {
+    background-position: 80%;
+  }
+}
+
 @media screen and (max-width: 610px) {
   header#header {
     position: absolute;
