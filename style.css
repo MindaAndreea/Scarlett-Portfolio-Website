@@ -314,6 +314,8 @@ section#about-me {
   font-size: 1.8rem;
   font-family: "Indie Flower", cursive;
   color: white;
+  line-height: 4rem;
+  font-weight: 550;
 }
 
 .about-me-content-link:link,
@@ -346,4 +348,237 @@ section#about-me {
 .about-me-content-link:active::after {
   transform: scaleY(1);
   transform-origin: top;
+}
+
+section#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6rem 2rem 2rem;
+  background-color: var(--primary-color);
+}
+
+.service i,
+.services-title {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.service i,
+.services-title,
+.services-paragraph {
+  margin-bottom: calc(1.5rem + 1.5vw);
+}
+
+.service i {
+  color: white;
+}
+
+.services-title {
+  text-transform: uppercase;
+  color: white;
+}
+
+.services-paragraph {
+  font-size: 1.5rem;
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-weight: 550;
+}
+
+.service {
+  padding: 4rem;
+  margin: 0 2rem 4rem;
+  flex-basis: 40rem;
+  flex-grow: 1;
+  background-color: var(--secondary-color);
+  border-bottom: 0.2rem solid var(--secondary-color);
+  border-right: 0.2rem solid var(--secondary-color);
+  border-left: 0.2rem solid var(--secondary-color);
+  position: relative;
+  z-index: 1;
+}
+
+.service:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.45s cubic-bezier(1, 0, 0, 1);
+  z-index: -1;
+}
+
+.service:hover::after,
+.service:active::after {
+  transform: scaleX(1);
+}
+
+section#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: calc(2rem + 1.5vw);
+  background-color: var(--third-color);
+}
+
+.design-skills,
+.coding-skills {
+  padding: calc(2rem + 1.5vw);
+  text-transform: uppercase;
+  flex-basis: 40rem;
+  flex-grow: 1;
+}
+
+.skills-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.skills-h4 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: calc(1rem + 1vw);
+}
+
+.design-skills-progress,
+.coding-skills-progress {
+  position: relative;
+  display: block;
+  padding: calc(0.3rem + 0.5vw);
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin-bottom: calc(1rem + 1vw);
+}
+
+.coding-skills-progress span,
+.design-skills-progress span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--secondary-color);
+}
+
+.coding-skills-progress-max span {
+  border-radius: 1rem;
+}
+
+.design-skills-progress-1 {
+  animation: web-design 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes web-design {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+.design-skills-progress-2 {
+  animation: print-design 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes print-design {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.design-skills-progress-3 {
+  animation: logo-design 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes logo-design {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.design-skills-progress-4 {
+  animation: graphic-design 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes graphic-design {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+.coding-skills-progress-1 {
+  animation: HTML-CSS 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes HTML-CSS {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.coding-skills-progress-2 {
+  animation: Javascript 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes Javascript {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+.coding-skills-progress-3 {
+  animation: python 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes python {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.coding-skills-progress-4 {
+  animation: SQL 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes SQL {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 35%;
+  }
 }
