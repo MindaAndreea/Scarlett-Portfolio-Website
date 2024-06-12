@@ -531,7 +531,7 @@ section#skills {
 }
 
 .coding-skills-progress-1 {
-  animation: HTML-CSS 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: HTML-CSS 3s infinite cubic-bezier(1, 0, 0, 1);
   animation-timing-function: linear;
 }
 
@@ -546,7 +546,7 @@ section#skills {
 }
 
 .coding-skills-progress-2 {
-  animation: Javascript 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: Javascript 3s infinite cubic-bezier(1, 0, 0, 1);
   animation-timing-function: linear;
 }
 
@@ -561,7 +561,7 @@ section#skills {
 }
 
 .coding-skills-progress-3 {
-  animation: python 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: python 3s infinite cubic-bezier(1, 0, 0, 1);
   animation-timing-function: linear;
 }
 
@@ -576,7 +576,7 @@ section#skills {
 }
 
 .coding-skills-progress-4 {
-  animation: SQL 4s infinite cubic-bezier(1, 0, 0, 1);
+  animation: SQL 3s infinite cubic-bezier(1, 0, 0, 1);
   animation-timing-function: linear;
 }
 
@@ -725,4 +725,142 @@ section#feedback {
 .all-feedbacks-link:active::after {
   transform: scaleY(1);
   transform-origin: top;
+}
+
+section#contact {
+  height: 100vh;
+  background-image: url(./images/full-bg-03.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contact-form {
+  flex-basis: 40rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--third-color-mod);
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--secondary-color) solid 0.1rem;
+}
+
+.contact-form textarea {
+  height: 30vh;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+section#footer {
+  background-color: var(--secondary-color);
+  z-index: 2;
+}
+
+.footer-content {
+  height: 100%;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.footer-title h2 {
+  font-size: calc(1.5rem + 1vw);
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 0.2rem;
+  margin-right: calc(1.5rem + 1vw);
+}
+
+.footer-links-title {
+  font-size: calc(2rem + 1.5vw);
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.footer-links-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ul.footer-links li {
+  margin-bottom: 2rem;
+}
+
+ul.footer-links li a {
+  position: relative;
+  padding: 0.2rem 0.6rem;
+  font-size: calc(1.5rem + 0.6667vw);
+}
+
+ul.footer-links li a:link::before,
+ul.footer-links li a:visited::before,
+ul.footer-links li a:link::after,
+ul.footer-links li a:visited::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+ul.footer-links li a:link::before,
+ul.footer-links li a:visited::before {
+  top: 0;
+  transform-origin: left;
+}
+
+ul.footer-links li a:link::after,
+ul.footer-links li a:visited::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+ul.footer-links li a:hover::before,
+ul.footer-links li a:active::before,
+ul.footer-links li a:hover::after,
+ul.footer-links li a:active::after {
+  transform: scaleX(1);
+}
+
+.all-rights-reserved {
+  text-align: center;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  margin-top: 5rem;
+}
+
+.all-rights-reserved p {
+  font-size: calc(0.9rem + 0.7vw);
+  font-family: "Indie Flower", cursive;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
 }
